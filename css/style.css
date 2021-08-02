@@ -126,7 +126,7 @@ header {
   display: flex;
   justify-content: center;
 }
-.item .link:hover .icon {
+.link:hover .icon {
   fill: var(--accent-color);
 }
 /*section hero*/
@@ -182,9 +182,9 @@ header {
 }
 .icon-benefits .icon {
   display: flex;
-  flex-direction: row;
+  margin: 25px auto;
   justify-content: center;
-  align-items: center;
+
   fill: var(--primary-text-color);
 }
 .benefits-text {
