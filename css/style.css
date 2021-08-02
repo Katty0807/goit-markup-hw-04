@@ -182,7 +182,9 @@ header {
 }
 .icon-benefits .icon {
   display: flex;
-
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   fill: var(--primary-text-color);
 }
 .benefits-text {
