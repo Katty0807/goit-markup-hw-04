@@ -120,11 +120,12 @@ header {
 }
 .link .icon {
   margin-right: 10px;
-  fill: var(--secondary-color);
+  fill: var(--primary-text-color);
 }
 .item .link {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .link:hover .icon {
   fill: var(--accent-color);
@@ -175,17 +176,21 @@ header {
 .icon-benefits {
   width: 270px;
   height: 120px;
-
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 .icon-benefits .icon {
-  display: flex;
-  margin: 25px auto;
-  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
+  justify-content: center;
   fill: var(--primary-text-color);
+}
+.icon-benefits:hover .icon {
+  fill: var(--accent-color);
 }
 .benefits-text {
   display: flex;
@@ -221,7 +226,8 @@ header {
   padding-top: 0;
 }
 .work-title,
-.our-team {
+.our-team,
+.clients {
   margin-bottom: 50px;
 
   color: var(--primary-text-color);
@@ -255,6 +261,10 @@ header {
 }
 .team .item {
   background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .team .title {
@@ -278,7 +288,65 @@ header {
   line-height: 1.19;
   text-align: center;
 }
+.social-link {
+  width: 206px;
 
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-link .icon {
+  fill: #afb1b8;
+}
+
+.icon-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.icon-link:hover .icon {
+  fill: var(--white-color);
+}
+
+.icon-link + .icon-link {
+  margin-left: 10px;
+}
+
+/*Clients*/
+
+.clients-link {
+  display: flex;
+  align-items: center;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.clients-item .link .icon {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
 /*our work*/
 
 .our-work .button {
@@ -385,4 +453,11 @@ footer {
 .address a:hover,
 .address a:focus {
   color: var(--accent-color);
+}
+.join-container {
+  display: flex;
+  align-items: baseline;
+}
+.join {
+  margin: auto;
 }
